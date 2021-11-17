@@ -43,5 +43,15 @@ echo "NLS_LANG="SIMPLIFIED CHINESE_CHINA.al32utf8"; export NLS_LANG" >> /home/or
 echo "刷新环境变量------------------------------------------------->"
 source /etc/profile
 source /home/oracle/.bash_profile
-
+echo "切换oracle用户------------------------------------------------->"
+su oracle
+chmod 6751 $ORACLE_HOME/bin/oracle
+lsnrctl status
+lsnrctl start
+#========================================================
+#   进入数据库：sqlplus /nolog
+#   使用sysdba角色登录sqlplus 默认 用户/密码连接:	conn /as sysdba
+#   更改sys/system密码：password system;
+#   启动数据库: SQL> startup	关闭数据库: SQL> shutdown
+#========================================================
 echo "安装完成-------------------------------------------->"

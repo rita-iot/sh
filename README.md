@@ -1,6 +1,6 @@
 ### 常用环境安装脚本
 
-以下脚本只适用于Centos 7 环境，其他服务器环境并未适配。
+以下脚本只适用于Centos 7 环境，其他服务器环境并未适配。只是记录自己学习shell的过程，其中代码写的并不是很好，如有错误，还往指正。
 
 ### 脚本说明
 
@@ -30,4 +30,4 @@ wget https://gitee.com/upy/shell/raw/master/setup.sh -O setup.sh && bash setup.s
 bash <(curl -sL https://gitee.com/upy/shell/raw/master/setup.sh)
 ```
 
-
+暂时就想到这些。
